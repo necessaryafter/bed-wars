@@ -29,13 +29,6 @@ allprojects {
         maven(url = "https://repo.codemc.io/repository/maven-public/")
         maven(url = "https://repo.extendedclip.com/content/repositories/placeholderapi/")
         maven(url = "https://repo.papermc.io/repository/maven-public/")
-        maven {
-            url = uri("https://158.69.18.74:8080/releases")
-            credentials {
-                username = "redewinter"
-                password = "8e7H0791Puae"
-            }
-        }
     }
 
     tasks.withType<JavaCompile> {
@@ -43,6 +36,6 @@ allprojects {
     }
 
     java {
-        toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+        toolchain.languageVersion.set(JavaLanguageVersion.of(11))
     }
 }

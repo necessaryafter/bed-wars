@@ -2,7 +2,7 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-rootProject.name = "sdk"
+rootProject.name = "bed-wars"
 
 val excludedModules = setOf(
     ":test:exclude",
