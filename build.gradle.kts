@@ -36,6 +36,6 @@ allprojects {
     }
 
     java {
-        toolchain.languageVersion.set(JavaLanguageVersion.of(11))
+        toolchain.languageVersion.set(JavaLanguageVersion.of(21))
     }
 }
