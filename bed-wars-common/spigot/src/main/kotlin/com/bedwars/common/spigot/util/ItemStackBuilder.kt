@@ -1,4 +1,4 @@
-package com.bedwars.common.view.util
+package com.bedwars.common.spigot.util
 
 import net.kyori.adventure.text.Component
 import org.bukkit.Material

@@ -1,16 +1,13 @@
-package com.bedwars.common.view.util
+package com.bedwars.common.spigot.util
 
 import com.mojang.authlib.GameProfile
 import com.mojang.authlib.properties.Property
-import org.bukkit.Bukkit
 import org.bukkit.Material
 import org.bukkit.block.Block
 import org.bukkit.block.Skull
 import org.bukkit.inventory.ItemStack
 import org.bukkit.inventory.meta.SkullMeta
 import java.lang.reflect.Field
-import java.net.URI
-import java.net.URISyntaxException
 import java.util.*
 
 enum class CustomSkull(private val url: String) {

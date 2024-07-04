@@ -2,7 +2,7 @@ package com.bedwars.common.spigot.kit.impl
 
 import com.bedwars.common.spigot.kit.ItemBedWarsKit
 import com.bedwars.common.spigot.model.match.BedWarsMatchType
-import com.bedwars.common.view.util.itemStackBuilder
+import com.bedwars.common.spigot.util.itemStackBuilder
 import net.kyori.adventure.text.Component
 import org.bukkit.Material
 import org.bukkit.inventory.ItemStack
