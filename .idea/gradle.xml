@@ -10,7 +10,6 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/bed-wars-common" />
-            <option value="$PROJECT_DIR$/bed-wars-common/inventory" />
             <option value="$PROJECT_DIR$/bed-wars-common/spigot" />
             <option value="$PROJECT_DIR$/bed-wars-lobby" />
             <option value="$PROJECT_DIR$/bed-wars-minigame" />

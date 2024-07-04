@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bed-wars-common/inventory/bed-wars.bed-wars-common.inventory.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bed-wars-common/inventory/bed-wars.bed-wars-common.inventory.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bed-wars-common/inventory/bed-wars.bed-wars-common.inventory.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bed-wars-common/inventory/bed-wars.bed-wars-common.inventory.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bed-wars-common/spigot/bed-wars.bed-wars-common.spigot.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bed-wars-common/spigot/bed-wars.bed-wars-common.spigot.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bed-wars-common/spigot/bed-wars.bed-wars-common.spigot.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bed-wars-common/spigot/bed-wars.bed-wars-common.spigot.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bed-wars-lobby/bed-wars.bed-wars-lobby.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bed-wars-lobby/bed-wars.bed-wars-lobby.main.iml" />

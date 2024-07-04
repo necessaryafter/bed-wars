@@ -3,8 +3,6 @@ plugins {
 }
 
 dependencies {
-    paperweight.paperDevBundle("1.21-R0.1-SNAPSHOT")
-
-    compileOnly(project(":bed-wars-common:inventory"))
+    paperweight.paperDevBundle("1.20.4-R0.1-SNAPSHOT")
     compileOnly(libs.event.bus)
 }
