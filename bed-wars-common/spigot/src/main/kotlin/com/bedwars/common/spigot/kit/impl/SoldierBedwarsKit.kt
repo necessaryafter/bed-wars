@@ -1,13 +1,15 @@
 package com.bedwars.common.spigot.kit.impl
 
-import com.bedwars.common.spigot.kit.ItemBedWarsKit
+import com.bedwars.common.spigot.event.impl.match.MatchUserJoinEvent
+import com.bedwars.common.spigot.kit.ItemBedwarsKit
 import com.bedwars.common.spigot.model.match.BedWarsMatchType
 import com.bedwars.common.spigot.util.itemStackBuilder
 import net.kyori.adventure.text.Component
 import org.bukkit.Material
 import org.bukkit.inventory.ItemStack
+import org.greenrobot.eventbus.Subscribe
 
-class SoldierBedwarsKit : ItemBedWarsKit("soldier") {
+class SoldierBedwarsKit : ItemBedwarsKit("soldier") {
 
     override fun getIcon(): ItemStack {
         return itemStackBuilder(Material.IRON_SWORD) {
@@ -29,5 +31,10 @@ class SoldierBedwarsKit : ItemBedWarsKit("soldier") {
         return listOf(ItemStack(Material.IRON_SWORD), ItemStack(Material.GOLDEN_APPLE, 8))
     }
 
-    //todo give item on match join
+    @Subscribe
+    private fun onMatchJoin(event: MatchUserJoinEvent) {
+        val bedWarsUser = event.bedWarsUser
+
+        giveItems(bedWarsUser)
+    }
 }

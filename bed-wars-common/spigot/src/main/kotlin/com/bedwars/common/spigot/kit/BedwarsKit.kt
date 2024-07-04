@@ -7,13 +7,13 @@ import org.greenrobot.eventbus.EventBus
 import java.util.concurrent.Executors
 
 
-abstract class BedWarsKit(
+abstract class BedwarsKit(
     val identifier: String,
     val eventBus: EventBus = EventBus.builder()
         .throwSubscriberException(true)
         .executorService(
             Executors.newCachedThreadPool(
-                NamedThreadFactory("Custom item executor")
+                NamedThreadFactory("")
             )
         ).build()
 ) {
