@@ -1,6 +1,6 @@
 package com.bedwars.common.spigot.kit
 
-import com.bedwars.common.spigot.model.match.BedWarsMatchType
+import com.bedwars.common.spigot.model.match.type.BedwarsMatchType
 import net.minecraft.util.thread.NamedThreadFactory
 import org.bukkit.inventory.ItemStack
 import org.greenrobot.eventbus.EventBus
@@ -19,5 +19,5 @@ abstract class BedWarsKit(
 ) {
 
     abstract fun getIcon(): ItemStack
-    abstract fun getMatchType(): List<BedWarsMatchType>
+    abstract fun getMatchType(): List<BedwarsMatchType>
 }

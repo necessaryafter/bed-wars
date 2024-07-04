@@ -1,0 +1,36 @@
+maps:
+  teste:
+    name: "Test"
+    template-id: "map-test"
+    match-type: SOLO
+    diamond-generators:
+
+    arenas:
+      RED:
+        bed-location: "0;0;0"
+        generator-location: "0;0;0"
+        spawn-location: "0;0;0"
+      BLUE:
+        bed-location: "0;0;0"
+        generator-location: "0;0;0"
+        spawn-location: "0;0;0"
+      GREEN:
+        bed-location: "0;0;0"
+        generator-location: "0;0;0"
+        spawn-location: "0;0;0"
+      YELLOW:
+        bed-location: "0;0;0"
+        generator-location: "0;0;0"
+        spawn-location: "0;0;0"
+      WHITE:
+        bed-location: "0;0;0"
+        generator-location: "0;0;0"
+        spawn-location: "0;0;0"
+      PINK:
+        bed-location: "0;0;0"
+        generator-location: "0;0;0"
+        spawn-location: "0;0;0"
+      GRAY:
+        bed-location: "0;0;0"
+        generator-location: "0;0;0"
+        spawn-location: "0;0;0"

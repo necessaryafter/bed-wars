@@ -1,7 +1,7 @@
 package com.bedwars.common.spigot.kit.impl
 
 import com.bedwars.common.spigot.kit.ItemBedWarsKit
-import com.bedwars.common.spigot.model.match.BedWarsMatchType
+import com.bedwars.common.spigot.model.match.type.BedwarsMatchType
 import com.bedwars.common.spigot.util.itemStackBuilder
 import net.kyori.adventure.text.Component
 import org.bukkit.Material
@@ -21,8 +21,8 @@ class SoldierBedwarsKit : ItemBedWarsKit("soldier") {
         }
     }
 
-    override fun getMatchType(): List<BedWarsMatchType> {
-        return listOf(BedWarsMatchType.SOLO, BedWarsMatchType.DUO, BedWarsMatchType.TRIPLE, BedWarsMatchType.SQUAD)
+    override fun getMatchType(): List<BedwarsMatchType> {
+        return listOf(BedwarsMatchType.SOLO, BedwarsMatchType.DUO, BedwarsMatchType.TRIPLE, BedwarsMatchType.SQUAD)
     }
 
     override fun getItems(): List<ItemStack> {
