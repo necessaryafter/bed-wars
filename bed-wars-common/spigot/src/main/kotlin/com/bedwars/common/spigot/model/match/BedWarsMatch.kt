@@ -4,7 +4,7 @@ import com.bedwars.common.spigot.map.BedwarsMap
 import com.bedwars.common.spigot.model.match.state.BedwarsMatchState
 import org.apache.commons.lang.RandomStringUtils
 
-data class BedwarsMatch(
+data class BedWarsMatch(
     val matchId: String = RandomStringUtils.randomAlphabetic(5),
 
     val bedwarsMap: BedwarsMap,
