@@ -1,24 +1,31 @@
 package com.bedwars.common.spigot.model.user
 
-import com.bedwars.common.spigot.kit.BedWarsKit
 import com.bedwars.common.spigot.model.match.type.BedwarsMatchType
-import org.bukkit.Bukkit
-import org.bukkit.entity.Player
+import com.bedwars.common.spigot.celebration.AbstractMatchCelebration
+import com.bedwars.common.spigot.kit.BedwarsKit
 
-class BedWarsUser(
+import org.bukkit.Bukkit
+
+data class BedWarsUser(
     val playerName: String,
-    val purchasedBedwarsKits: MutableMap<BedwarsMatchType, BedWarsKit> = mutableMapOf(),
-    val selectionedBedWarsKits: MutableMap<BedwarsMatchType, BedWarsKit> = mutableMapOf()
+    val purchasedBedwarsKits: MutableMap<BedwarsMatchType, BedwarsKit> = mutableMapOf(),
+    val selectedBedwarsKits: MutableMap<BedwarsMatchType, BedwarsKit> = mutableMapOf(),
+    val selectedMatchCelebration: AbstractMatchCelebration? = null,
+    val purchasedMatchCelebrations: MutableList<AbstractMatchCelebration> = mutableListOf()
 ) {
 
-    fun getPlayer(): Player? = Bukkit.getPlayerExact(playerName)
+    val player by lazy { Bukkit.getPlayerExact(playerName) }
 
-    fun isPurchasedKit(bedWarsMatchType: BedwarsMatchType, bedWarsKit: BedWarsKit): Boolean {
+    fun isPurchasedKit(bedWarsMatchType: BedWarsMatchType, bedWarsKit: BedwarsKit): Boolean {
         return purchasedBedwarsKits.contains(bedWarsMatchType) && purchasedBedwarsKits[bedWarsMatchType] == bedWarsKit
     }
 
-    fun getSelectionedKit(bedWarsMatchType: BedwarsMatchType): BedWarsKit? = selectionedBedWarsKits[bedWarsMatchType]
-    fun isSelectionedKit(bedWarsMatchType: BedwarsMatchType, bedWarsKit: BedWarsKit): Boolean {
-        return selectionedBedWarsKits.contains(bedWarsMatchType) && selectionedBedWarsKits[bedWarsMatchType] == bedWarsKit
+    fun isPurchasedCelebration(matchCelebration: AbstractMatchCelebration): Boolean {
+        return purchasedMatchCelebrations.contains(matchCelebration)
+    }
+
+    fun getSelectedKit(bedWarsMatchType: BedWarsMatchType): BedwarsKit? = selectedBedwarsKits[bedWarsMatchType]
+    fun isSelectedKit(bedWarsMatchType: BedWarsMatchType, bedWarsKit: BedwarsKit): Boolean {
+        return selectedBedwarsKits.contains(bedWarsMatchType) && selectedBedwarsKits[bedWarsMatchType] == bedWarsKit
     }
 }
