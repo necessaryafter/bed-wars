@@ -1,14 +1,15 @@
 package com.bedwars.common.spigot.model.user
 
+import com.bedwars.common.spigot.model.match.type.BedwarsMatchType
 import com.bedwars.common.spigot.celebration.AbstractMatchCelebration
 import com.bedwars.common.spigot.kit.BedwarsKit
-import com.bedwars.common.spigot.model.match.BedWarsMatchType
+
 import org.bukkit.Bukkit
 
 data class BedWarsUser(
     val playerName: String,
-    val purchasedBedwarsKits: MutableMap<BedWarsMatchType, BedwarsKit> = mutableMapOf(),
-    val selectedBedwarsKits: MutableMap<BedWarsMatchType, BedwarsKit> = mutableMapOf(),
+    val purchasedBedwarsKits: MutableMap<BedwarsMatchType, BedwarsKit> = mutableMapOf(),
+    val selectedBedwarsKits: MutableMap<BedwarsMatchType, BedwarsKit> = mutableMapOf(),
     val selectedMatchCelebration: AbstractMatchCelebration? = null,
     val purchasedMatchCelebrations: MutableList<AbstractMatchCelebration> = mutableListOf()
 ) {
